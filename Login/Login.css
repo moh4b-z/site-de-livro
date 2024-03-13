@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khitan+Small+Script&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #280d35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left-login > h1 {
+    color: #46b2a3;
+    margin: 0px 30px;
+}
+.right-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #331d45;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px #46b2a356;
+}
+
+.card-login > h1 {
+    color: #d1a4d0;
+    font-weight: 800;
+    margin: 0;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+    margin: 10px 0px;
+}
+
+.texto > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fec3e7;
+    color: #5b1643;
+    font-size: 12pt;
+    box-shadow: 0px 5px 5px #46b2a356;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texto > label {
+    color: azure;
+    margin-bottom: 10px;
+}
+
+.texto > input::placeholder{
+    color: #331d45;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #280d35;
+    background: #ce80c1;
+    cursor: pointer;
+}
