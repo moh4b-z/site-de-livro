@@ -38,6 +38,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
 }
 
 .barra {
@@ -87,7 +88,7 @@ a {
     padding: 20px;
     border: 3px solid; 
     border-color: #b99936; 
-    height: 25vh;
+    height: 21vh;
     
 }
 
@@ -116,11 +117,6 @@ nav li a:hover{
     border-radius: 4px;
 }
 
-.login {
-    background-color: #b99936;
-    border-radius: 4px;
-}
-
 .submenu {
     position: absolute;
     display: none;
@@ -131,47 +127,79 @@ nav li a:hover{
 
 }
 
+/*###  BOTÃO MENU  ###*/
+/*###  BOTÃO MENU  ###*/
+/*###  BOTÃO MENU  ###*/
+/*###  BOTÃO MENU  ###*/
+/*###  BOTÃO MENU  ###*/
+/*###  BOTÃO MENU  ###*/
+
 .menu-re {
     display: none;
     cursor: pointer;
 }
-.menu-re div{
-    width: 32px;
-    height: 2px;
-    background: #b99936;
-    margin: 8px;
 
-}
+
 @media (max-width: 1225px){
-    body {
-        overflow-x: hidden;
-    }
+   
+
     .menu {
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: #000f1f;
-        border-color: #b99936;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translate(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .menu li {
-        margin-left: 0;
-        opacity: 0;
-
-    }
-    .menu-re {
         display: block;
+        position: absolute;
+        width: 100%;
+        top: 21vh;
+        right: 0px;
+        background: #000f1f;
+        height: 0px;
+        transition: 0.5s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
 
     }
+    #nav.active #menu{
+        height: 79vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
 
-}
+    .menu a {
+        padding: 1rem 0;
+        margin: 2vh;
+        border-bottom: 8px;
+    }
 
-.menu.active {
-    transform: translate(0);
+    #btn-menu {
+        display: flex;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+    #icon-menu {
+        color: #b99936;
+        border-top: 3px solid;
+        width: 32px;
+    }
+    #icon-menu::after, #icon-menu::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #icon-menu {
+        border-top-color: transparent;
+    }
+    #nav.active #icon-menu::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #icon-menu::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
 }
