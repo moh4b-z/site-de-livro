@@ -1,99 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khitan+Small+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
 
 
 body {
-    margin: 0;
-}
-
-.main-login {
-    width: 100vw;
-    height: 100vh;
-    background: #280d35;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.left-login {
-    width: 50vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background: #dad2cf;
+    box-shadow: 5px 50px 10px #000000;
+}
 
+
+
+.container {
+    width: 86%;
+    height: 86vh;
+    display: flex;
+    border: 3px solid;
+    border-color: #e7b623;
 }
-.left-login > h1 {
-    color: #46b2a3;
-    margin: 0px 30px;
-}
-.right-login{
-    width: 100vw;
-    height: 100vh;
+
+.logo-login {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
-.card-login{
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #331d45;
-    border-radius: 20px;
-    box-shadow: 0px 5px 5px #46b2a356;
-}
-
-.card-login > h1 {
-    color: #d1a4d0;
-    font-weight: 800;
-    margin: 0;
-}
-
-.texto {
+.formulario {
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
-    justify-self: center;
-    margin: 10px 0px;
+    background-color: #121d29;
+    padding: 3rem;
 }
 
-.texto > input {
-    width: 100%;
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: #dad2cf;
+}
+
+/*###  BOTÃO LOGIN   ###*/
+/*###  BOTÃO LOGIN   ###*/
+/*###  BOTÃO LOGIN   ###*/
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #e7b623;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #e7b623dc;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000f1f;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #e7b623;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*###  BOTÃO LOGIN FIM   ###*/
+/*###  BOTÃO LOGIN FIM   ###*/
+/*###  BOTÃO LOGIN FIM   ###*/
+
+
+/*###  FORMATAÇÃO DO TEXTO   ###*/
+/*###  FORMATAÇÃO DO TEXTO   ###*/
+/*###  FORMATAÇÃO DO TEXTO   ###*/
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.4rem 1.2rem;
     border: none;
     border-radius: 10px;
-    padding: 15px;
-    background: #fec3e7;
-    color: #5b1643;
-    font-size: 12pt;
-    box-shadow: 0px 5px 5px #46b2a356;
-    outline: none;
-    box-sizing: border-box;
+    background: #15202c;
 }
 
-.texto > label {
+.input-box input:hover{
+    background-color: #293542c9;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #e7b623;
+}
+
+.input-box label,
+.genero-titolo h5,
+.nacimento label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #e7b623;
+}
+
+.barra {
+    color: aliceblue;
+}
+
+.input-box input::placeholder {
     color: azure;
-    margin-bottom: 10px;
 }
 
-.texto > input::placeholder{
-    color: #331d45;
-}
+/*###  FORMATAÇÃO DO TEXTO FIM   ###*/
+/*###  FORMATAÇÃO DO TEXTO FIM   ###*/
+/*###  FORMATAÇÃO DO TEXTO FIM   ###*/
 
-.btn-login {
-    width: 100%;
-    padding: 10px 0px;
-    margin: 25px;
+
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+
+.nacimento input{
+    margin: 0.5rem 0;
+    padding: 0.4rem 1rem;
     border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #280d35;
-    background: #ce80c1;
+    border-radius: 10px;
+    background: #15202c;
+}
+
+.txt-nacimento {
+    color: aliceblue;
+}
+/* Estilizando o mini botão do calendário */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #000f1f;
+    background-color: #e7b623; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em;
     cursor: pointer;
+}
+
+/* Estilizando a seta do calendário */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none; /* Escondendo a seta */
+}
+
+
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+
+
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+
+.genero-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gennero-input {
+    display: flex;
+    align-items: center;
+}
+
+.gennero-input input {
+    margin-right: 0.35rem;
+}
+
+.gennero-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #e7b623;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #e7b623ce;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #000f1f;
 }

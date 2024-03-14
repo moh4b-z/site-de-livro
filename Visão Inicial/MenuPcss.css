@@ -6,7 +6,7 @@
 
 
 body {
-    background: #d3beb7;
+    background: #dad2cf;
 }
 
 body, ul, li, p {
@@ -22,6 +22,12 @@ a {
     text-decoration: none;
     color: aliceblue;
 }
+
+
+/*###  BARRA DE PESQUISA   ###*/
+/*###  BARRA DE PESQUISA   ###*/
+/*###  BARRA DE PESQUISA   ###*/
+/*###  BARRA DE PESQUISA   ###*/
 
 .barra::placeholder {
     font-size: 20px; 
@@ -78,6 +84,11 @@ a {
     }
 }
 
+/*###  BARRA DE PESQUISA FIM   ###*/
+/*###  BARRA DE PESQUISA FIM   ###*/
+/*###  BARRA DE PESQUISA FIM   ###*/
+/*###  BARRA DE PESQUISA FIM   ###*/
+
 
 .header {
     background: #000f1f;
@@ -87,7 +98,7 @@ a {
     align-items: center;
     padding: 20px;
     border: 3px solid; 
-    border-color: #b99936; 
+    border-color: #e7b623; 
     height: 21vh;
     
 }
@@ -113,7 +124,7 @@ a {
 }
 
 nav li a:hover{
-    background-color: #b99936;
+    background-color: #002838ea;
     border-radius: 4px;
 }
 
@@ -121,14 +132,17 @@ nav li a:hover{
     position: absolute;
     display: none;
     background-color: #000f1f;
+    border: 3px solid;
+    border-color: #e7b623;
+    
 }
 .Smenu:hover .submenu {
     display: block;
+    border: 3px solid;
+    border-color: #e7b623;
 
 }
 
-/*###  BOTÃO MENU  ###*/
-/*###  BOTÃO MENU  ###*/
 /*###  BOTÃO MENU  ###*/
 /*###  BOTÃO MENU  ###*/
 /*###  BOTÃO MENU  ###*/
@@ -165,8 +179,8 @@ nav li a:hover{
 
     .menu a {
         padding: 1rem 0;
-        margin: 2vh;
-        border-bottom: 8px;
+        margin: 5vh;
+        border-bottom: 5px;
     }
 
     #btn-menu {
@@ -176,7 +190,7 @@ nav li a:hover{
         background: none;
     }
     #icon-menu {
-        color: #b99936;
+        color: #e7b623;
         border-top: 3px solid;
         width: 32px;
     }
@@ -201,5 +215,8 @@ nav li a:hover{
         top: -7px;
     }
 
-
 }
+/*###  BOTÃO MENU FIM  ###*/
+/*###  BOTÃO MENU FIM  ###*/
+/*###  BOTÃO MENU FIM  ###*/
+/*###  BOTÃO MENU FIM  ###*/
