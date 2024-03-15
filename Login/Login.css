@@ -107,7 +107,7 @@ body {
 
 .input-box input{
     margin: 0.6rem 0;
-    padding: 0.6rem 1.8rem;
+    padding: 0.4rem 1.8rem;
     border: none;
     border-radius: 10px;
     background: #15202c;
@@ -129,6 +129,7 @@ body {
 
 .barra {
     color: aliceblue;
+    font-size: 16px;
 }
 
 .input-box input::placeholder {

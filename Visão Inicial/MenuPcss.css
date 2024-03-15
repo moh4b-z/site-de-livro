@@ -54,7 +54,7 @@ a {
     padding: 0;
     color: #ffffff;
     font-size: 20px;
-    width: 500px;
+    width: 400px;
     transition: 0.5s;
 }
 
@@ -71,7 +71,7 @@ a {
 @media (max-width: 735px){
     .barra {
         padding: 0;
-        color: #000f1f;
+        color: #ffffff;
         font-size: 20px;
         width: 0px;
     }
@@ -80,7 +80,7 @@ a {
         padding: 0 6px;
     }
     .box:hover > .barra {
-        background: #ffffff;
+        background: #001327c2;
     }
 }
 
