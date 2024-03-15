@@ -18,8 +18,8 @@ body {
 
 
 .container {
-    width: 40%;
-    height: 80vh;
+    width: 50%;
+    height: 86vh;
     display: flex;
     border: 3px solid;
     border-color: #e7b623;
@@ -54,7 +54,6 @@ body {
 
 .login-button button {
     border: none;
-    margin: 10px;
     background-color: #e7b623;
     padding: 0.6rem 2rem;
     border-radius: 5px;
@@ -93,7 +92,6 @@ body {
 
 .input-group {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0.5rem 0;
@@ -102,12 +100,12 @@ body {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .input-box input{
     margin: 0.6rem 0;
-    padding: 0.6rem 1.8rem;
+    padding: 0.4rem 1.2rem;
     border: none;
     border-radius: 10px;
     background: #15202c;
@@ -121,8 +119,10 @@ body {
     outline: 1px solid #e7b623;
 }
 
-.input-box label {
-    font-size: 1rem;
+.input-box label,
+.genero-titolo h5,
+.nacimento label {
+    font-size: 0.75rem;
     font-weight: 600;
     color: #e7b623;
 }
@@ -138,6 +138,73 @@ body {
 /*###  FORMATAÇÃO DO TEXTO FIM   ###*/
 /*###  FORMATAÇÃO DO TEXTO FIM   ###*/
 /*###  FORMATAÇÃO DO TEXTO FIM   ###*/
+
+
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO  ###*/
+
+.nacimento input{
+    margin: 0.5rem 0;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #15202c;
+}
+
+.txt-nacimento {
+    color: aliceblue;
+}
+/* Estilizando o mini botão do calendário */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #000f1f;
+    background-color: #e7b623; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+/* Estilizando a seta do calendário */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none; /* Escondendo a seta */
+}
+
+
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+/*###  FORMATAÇÃO DATA DE NACIMENTO FIM  ###*/
+
+
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO   ###*/
+
+.genero-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gennero-input {
+    display: flex;
+    align-items: center;
+}
+
+.gennero-input input {
+    margin-right: 0.35rem;
+}
+
+.gennero-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
+/*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
 
 .continue-button button {
     width: 100%;
@@ -158,4 +225,25 @@ body {
     font-size: 0.93rem;
     font-weight: 500;
     color: #000f1f;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .container {
+        width: 80%;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;/*O z-index só tem efeito em elementos que têm um valor de posição diferente de static (por exemplo, relative, absolute ou fixed)*/
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .genero-group {
+        flex-direction: column;
+    }
+    .gennero-input {
+        margin-top: 0.5rem;
+    }
 }
