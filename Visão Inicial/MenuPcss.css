@@ -188,7 +188,13 @@ a {
 }
 .menu li{
     margin-left: 10px;
+    align-items: center; /* Alinhar verticalmente */
 }
+
+.menu li a img.carinho {
+    margin-right: 5px; /* Adicionar um pequeno espaço entre a imagem e o texto */
+}
+
 .menu li a {
     display: block;
     padding: 10px;
@@ -285,3 +291,10 @@ nav li a:hover{
 /*###  BOTÃO MENU FIM  ###*/
 /*###  BOTÃO MENU FIM  ###*/
 /*###  BOTÃO MENU FIM  ###*/
+
+
+.carinho {
+    width: 30px;
+    height: 30px;
+}
+

@@ -45,7 +45,23 @@ inputBox.onkeyup =(e)=> {
             if (!searchWrapper.contains(e.target)) {
                 searchWrapper.classList.remove('active');
             }
-        });        
+        });
+
+        
+        // Adiciona evento ao media query
+        if (window.matchMedia('(max-width: 735px)').matches) {
+            document.addEventListener('mouseover', (e) => {
+                if (!searchWrapper.contains(e.target) && !searchWrapper.classList.contains('active')) {
+                    searchWrapper.classList.remove('active');
+                }
+            });
+
+            searchWrapper.addEventListener('mouseout', (e) => {
+                if (!searchWrapper.contains(e.relatedTarget)) {
+                    searchWrapper.classList.remove('active');
+                }
+            });
+        }
     }
 }
 
