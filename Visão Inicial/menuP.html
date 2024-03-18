@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./MenuPcss.css"/> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Layout-base</title>
 </head>
 
@@ -15,8 +17,10 @@
         <div class="box">
             <input type="text" class="barra" style=" height: 30px;" placeholder="Pesquisar">
             <a href="#" class="botao">
-                <img src="/ZZ_Imagens/lupa22.svg" alt="Lupa" height="20;" width="20;">
+                <div class="icon"><ion-icon name="search"></ion-icon></div>
             </a>
+            <div class="list">
+            </div>
         </div>
 
         <nav id="nav">
@@ -27,15 +31,7 @@
 
                 <li><a href="/">Sobre</a></li>
 
-                <li class="Smenu">
-                    <a href="/">Literatura de países disponíveis</a>
-
-                    <div class="submenu">
-                        <a href="/">Brasileiras</a>
-                        <a href="/">Americanas</a>
-                        <a href="/">Japonesas</a>
-                    </div>
-                </li>
+                <li><a href="/">Carinho</a></li>
 
                 <li><a href="/">Ajuda</a></li>
 
@@ -45,7 +41,9 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <script src="/Visão Inicial/submenu.js"></script> 
+    <script src="submenu.js"></script>
+    <script src="./sugestao-barra.js"></script>
+    <script src="./fucionamentoBarraP.js"></script> 
+    <script src="./filtro-de-pesquisa-site.js"></script> 
 </body>
 </html>

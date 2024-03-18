@@ -56,6 +56,7 @@ a {
     font-size: 20px;
     width: 400px;
     transition: 0.5s;
+    padding-left: 20px;
 }
 
 .botao {
@@ -67,7 +68,9 @@ a {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    color: #e7b623;
 }
+
 @media (max-width: 735px){
     .barra {
         padding: 0;
@@ -88,6 +91,83 @@ a {
 /*###  BARRA DE PESQUISA FIM   ###*/
 /*###  BARRA DE PESQUISA FIM   ###*/
 /*###  BARRA DE PESQUISA FIM   ###*/
+
+
+/*###  BARRA DE PESQUISA LISTA  ###*/
+/*###  BARRA DE PESQUISA LISTA  ###*/
+/*###  BARRA DE PESQUISA LISTA  ###*/
+/*###  BARRA DE PESQUISA LISTA   ###*/
+
+
+.box {
+    position: relative; /* Para definir um contexto de posicionamento */
+    /* Restante do seu CSS existente */
+}
+
+.box.active input{
+    border-radius: 5px 5px 0 0;
+}
+
+
+.box .list{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    position: absolute;
+    top: calc(100% + 10px); /* Posiciona a lista abaixo da barra de pesquisa */
+    left: 0; /* Alinha a lista com a esquerda da barra de pesquisa */
+    width: 100%; /* Faz a largura da lista igual à largura da barra de pesquisa */
+    /* Restante do seu CSS existente */
+    background: #000f1f;
+    border: 2px solid; 
+    border-color: #e7b623; 
+}
+
+.box.active .list{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.list li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.box.active .list li{
+    display: block;
+    color: #ffffff;
+}
+
+.list li:hover{
+    background: #000f1f;
+}
+
+.box .icon {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #e7b623;
+    cursor: pointer;
+}
+
+
+/*###  BARRA DE PESQUISA LISTA FIM   ###*/
+/*###  BARRA DE PESQUISA LISTA FIM   ###*/
+/*###  BARRA DE PESQUISA LISTA FIM   ###*/
+/*###  BARRA DE PESQUISA LISTA FIM   ###*/
 
 
 .header {
@@ -126,21 +206,6 @@ a {
 nav li a:hover{
     background-color: #002838ea;
     border-radius: 4px;
-}
-
-.submenu {
-    position: absolute;
-    display: none;
-    background-color: #000f1f;
-    border: 3px solid;
-    border-color: #e7b623;
-    
-}
-.Smenu:hover .submenu {
-    display: block;
-    border: 3px solid;
-    border-color: #e7b623;
-
 }
 
 /*###  BOTÃO MENU  ###*/
