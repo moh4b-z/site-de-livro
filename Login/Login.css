@@ -23,6 +23,7 @@ body {
     display: flex;
     border: 3px solid;
     border-color: #e7b623;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px #000000;
 }
 
@@ -33,6 +34,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #121d29;
+    border-radius: 5px;
     padding: 3rem;
 }
 
@@ -96,7 +98,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1;
 }
 
 .input-box {
