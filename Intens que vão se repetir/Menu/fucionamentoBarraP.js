@@ -82,10 +82,12 @@ function ShowSuggeststions(list){
     let listData;
     if(!list.length){
         userValue = inputBox.value;
-        listData = `<li>${userData}</li>`
+        listData = `<li>${userValue}</li>`
     }
     else{
-        listData = list.join('');
+        // Limitando a lista para exibir apenas 6 sugestões
+        const limitedList = list.slice(0, 6);
+        listData = limitedList.join('');
     }
 
     sugesBox.innerHTML = listData;

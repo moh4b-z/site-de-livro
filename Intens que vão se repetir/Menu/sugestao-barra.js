@@ -7,4 +7,10 @@ let sugestoes = [
     "Amazon",
     "Amor",
     "Avião",
+    "Amazon",
+    "Amor",
+    "Avião",
+    "Amazon",
+    "Amor",
+    "Avião",
 ]

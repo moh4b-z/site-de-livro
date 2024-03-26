@@ -31,7 +31,6 @@ a {
 
 .barra::placeholder {
     font-size: 20px; 
-
     color: gray; 
     opacity: 1; 
 }
@@ -191,12 +190,10 @@ a {
     align-items: center; /* Alinhar verticalmente */
 }
 
-.menu li a img.carinho {
-    margin-right: 5px; /* Adicionar um pequeno espaço entre a imagem e o texto */
-}
+
 
 .menu li a {
-    display: block;
+    display: flex;
     padding: 10px;
 }
 
@@ -295,11 +292,15 @@ nav li a:hover{
 
 .carinho-txt {
     display: flex;
+    align-items: center; /* Centralizar verticalmente */
 }
+
 .iconC {
     color: #e7b623;
     width: 30px;
     height: 30px;
-    display: flex;
+    margin-right: 5px; /* Ajustar a margem entre o ícone e o texto */
+    margin-bottom: -3px; /* Mover o ícone um pouco para cima */
 }
+
 
