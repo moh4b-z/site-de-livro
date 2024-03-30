@@ -184,6 +184,7 @@ a {
 
 .menu {
     display: flex;
+    align-items: center; /* Centralizar verticalmente */
 }
 .menu li{
     margin-left: 10px;
@@ -194,7 +195,9 @@ a {
 
 .menu li a {
     display: flex;
+    align-items: center; /* Centralizar verticalmente */
     padding: 10px;
+    color: aliceblue; /* Cor do texto */
 }
 
 .logo {
@@ -204,6 +207,8 @@ a {
     background-image: url('/ZZ_Imagens/New\ Piskel.gif'); 
     background-size: contain; 
     background-repeat: no-repeat; 
+    margin-right: auto; /* Empurrar a logo para a esquerda */
+    margin-left: 10px; /* Espaçamento entre a logo e o menu */
 }
 
 nav li a:hover{
@@ -299,8 +304,8 @@ nav li a:hover{
     color: #e7b623;
     width: 30px;
     height: 30px;
-    margin-right: 5px; /* Ajustar a margem entre o ícone e o texto */
-    margin-bottom: -3px; /* Mover o ícone um pouco para cima */
+    margin-right: 3px; /* Ajustar a margem entre o ícone e o texto */
+    margin-bottom: 9px; /* Mover o ícone um pouco para cima */
 }
 
 

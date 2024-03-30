@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #dad2cf;
+}
+
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+
+main {
+    .titulo-page_C {
+        font-size: 30px;
+    }
+    .estrutura {
+        display: flex;
+
+        section {
+            flex: 1;
+        }
+        aside {
+            min-width: 250px;
+        }
+    }
+}
