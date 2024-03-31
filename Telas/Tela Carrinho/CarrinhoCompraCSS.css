@@ -10,12 +10,9 @@ body {
 }
 
 body, ul, li, p {
-    margin: 0;
-    padding: 0;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
-    box-sizing: border-box;
 }
 
 
@@ -32,9 +29,82 @@ main .estrutura {
     display: flex;
 }
 
-section {
+main section {
     flex: 1;
+
 }
-aside {
-    min-width: 250px;
+main aside {
+    min-width: 400px;
 }
+
+table {
+    width: 100%;
+}
+
+table thead tr th {
+    text-align: left;
+    padding: 20px 0;
+    text-transform: uppercase;
+    color: #7e7673;
+}
+
+
+tbody button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000f1f;
+}
+
+tbody button:hover {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #e7b623;
+}
+
+.produto {
+    border-radius: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove o espaço entre as células da tabela */
+}
+
+
+
+.product {
+    display: flex;
+}
+
+.imgProduto {
+    border-radius: 8px;
+}
+.infoProduto{
+    margin-left: 20px;
+}
+.nomeProduto {
+    font-size: 20px;
+
+}
+.variacaoProduto {
+    color: #7e7673;
+
+}
+
+tbody .produto td {
+    border-bottom: 8px solid #dad2cf00; /* Adiciona uma borda inferior às células */
+}
+
+tbody .produto:last-child td {
+    border-bottom: none; /* Remove a borda inferior das células do último elemento */
+}
+
+
+.maisoumenos span {
+    padding: 0 2px;
+    margin-bottom: 9px; /* Mover o ícone um pouco para cima */
+}
+

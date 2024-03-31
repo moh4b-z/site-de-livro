@@ -20,8 +20,11 @@ body, ul, li, p {
 
 
 main {
+    padding: 30px;
+
     .titulo-page_C {
         font-size: 30px;
+        padding: 20px 0;
     }
     .estrutura {
         display: flex;
@@ -32,5 +35,21 @@ main {
         aside {
             min-width: 250px;
         }
+    }
+}
+
+table {
+    width: 100%;
+
+    thead {
+        tr {
+            th {
+            text-align: left;
+            padding: 20px 0;
+            }   
+        }
+    }
+    tbody {
+
     }
 }
