@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
 
 body {
     background: #dad2cf;
@@ -35,6 +38,8 @@ main section {
 }
 main aside {
     min-width: 400px;
+    margin: 15px;
+    margin-left: 50px;
 }
 
 table {
@@ -53,15 +58,10 @@ tbody button {
     font-size: 20px;
     border: none;
     background: none;
-    cursor: pointer;
     color: #000f1f;
 }
 
 tbody button:hover {
-    font-size: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
     color: #e7b623;
 }
 
@@ -103,8 +103,53 @@ tbody .produto:last-child td {
 }
 
 
-.maisoumenos span {
-    padding: 0 2px;
-    margin-bottom: 9px; /* Mover o ícone um pouco para cima */
+.maisoumenos {
+    display: flex;
+    
 }
+
+.maisoumenos button {
+    padding: 0 2px;
+    
+}
+
+
+
+/*-----------------*/
+
+
+.boxCompras {
+    padding: 9px;
+    background-color: #00152be0;
+    border-radius: 8px;
+    border: 3px solid; 
+    border-color: #e7b623;
+    color: #dad2cf;
+}
+
+.infoCompra div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+.FechaCompra {
+    margin-top: 8px;
+    padding: 8px 0;
+    font-size: 20px;
+    border: none;
+    background: #00152be0;
+    color: #e7b623;
+    border-radius: 50px;
+    width: 100%;
+}
+.FechaCompra:hover {
+    background: #00152bbb;
+}
+
+.CUPOM {
+    display: flex;
+}
+
 

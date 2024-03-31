@@ -54,7 +54,7 @@
 
     <main>
 
-        <div class="titulo-page_C">Carrinho de Compras</div>
+        <div class="titulo-page_C">Carrinho de Compras (3)</div>
 
         <div class="estrutura">
 
@@ -67,7 +67,7 @@
                             <th>Preço</th>
                             <th>Quantidade</th>
                             <th>Total</th>
-                            <th>-</th>
+                            <th></th>
                         </tr>
                     </thead>
 
@@ -117,17 +117,47 @@
                             <td>R$: 222</td>
 
                             <td>
-                                <div>
-                                    <button><ion-icon name="add-circle"></ion-icon></button>
+                                <div class="maisoumenos">
+                                    <button class="mais"><ion-icon name="add-circle"></ion-icon></button>
                                     <span>2</span>
-                                    <button><ion-icon name="remove-circle"></ion-icon></button>
+                                    <button class="menos"><ion-icon name="remove-circle"></ion-icon></button>
                                 </div>
                             </td>
 
                             <td>R$: 2323</td>
 
                             <td>
-                                <button><ion-icon name="trash-bin"></ion-icon></button>
+                                <button class="delet"><ion-icon name="trash-bin"></ion-icon></button>
+                            </td>
+                        </tr>
+
+
+                        <tr class="produto">
+                            <td>
+                                <div class="product">
+                                    <img class="imgProduto" src="https://picsum.photos/100/100" alt="">
+            
+                                    <div class="infoProduto">
+                                        <div class="nomeProduto">Nome do produto</div>
+                                        <div class="variacaoProduto">Variação</div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>R$: 222</td>
+
+                            <td>
+                                <div class="maisoumenos">
+                                    <button class="mais"><ion-icon name="add-circle"></ion-icon></button>
+                                    <span>2</span>
+                                    <button class="menos"><ion-icon name="remove-circle"></ion-icon></button>
+                                </div>
+                            </td>
+
+                            <td>R$: 2323</td>
+
+                            <td>
+                                <button class="delet"><ion-icon name="trash-bin"></ion-icon></button>
                             </td>
                         </tr>
 
@@ -136,7 +166,33 @@
                 </table>
             </section>
 
-            <aside>Resumo das Compras</aside>
+            <aside>
+                <div class="boxCompras">
+                    <div class="infoCompra">
+                        <div>
+                            <span>Subtotal</span>
+                            <span>R$ 444,00</span>
+                        </div>
+
+                        <div>
+                            <span>Frete</span>
+                            <span>Gratuito</span>
+                        </div>
+
+
+                        <div class="CUPOM">
+                            <a href="#" class="botaoCUPOM">
+                                <div class="iconCUPOM">APLICAR CUPOM</div>
+                            </a>
+                            <input type="text" class="barraCUPOM" placeholder="ADICIONAR CUPOM">
+                
+                        </div>
+
+                    </div>
+                </div>
+                <button class="FechaCompra">Fecha Compra</button>
+                
+            </aside>
 
         </div>
 

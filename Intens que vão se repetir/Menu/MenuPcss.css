@@ -53,6 +53,7 @@ a {
     width: 400px;
     transition: 0.5s;
     padding-left: 20px;
+    border-radius: 50px;
 }
 
 .botao {
