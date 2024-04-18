@@ -189,19 +189,24 @@ input[type="date"]::-webkit-inner-spin-button {
     padding: 0 0.5rem;
 }
 
-.gennero-input {
+.gennero-input, .termos {
     display: flex;
     align-items: center;
 }
 
-.gennero-input input {
+.gennero-input, .termos input {
     margin-right: 0.35rem;
 }
 
-.gennero-input label {
+.gennero-input, .termos label {
     font-size: 0.81rem;
     font-weight: 600;
     color: aliceblue;
+}
+
+.termos {
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
 }
 
 /*###  FORMATAÇÃO DOS BOTÕES DE GENERO FIM   ###*/
